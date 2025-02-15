@@ -13896,11 +13896,15 @@ fieldset:disabled .btn {
 .hero-section {
     background-image: url('../img/hero.jpg'); /* Replace with your image path */
     background-size: cover;
-    background-position: center;
-    padding: 100px 20px; /* Adjust padding for vertical spacing */
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    padding: 10px 20px; 
     text-align: center;
     /* color: #fff; */
     position: relative;
+    height: calc(100vh - 90px);
+    margin-top: 90px;
 }
 
 .hero-section::after {
