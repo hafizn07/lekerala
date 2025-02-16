@@ -7872,3 +7872,21 @@ h5{
     }
   }
 }
+
+.customize-section{
+  margin: 50px auto;
+
+  .row{
+    display: flex;
+    gap: 33px;
+    flex-wrap: nowrap;
+    align-items: center;
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+
+  }
+  p{
+    font-size: 24px !important;
+  }
+}
