@@ -7798,9 +7798,56 @@ padding: 9px 0 19px 0;
 }
 .mulish-medium1 {
   font-family: 'Mulish', sans-serif !important;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 22px;
 }
 .service-detail-title {
   font-weight: 400 !important;
   line-height: 47px;
+}
+
+.exclusive-package-card{
+ padding: 45px 22px 14px 28px !important; 
+ /* max-width: 245px;
+ margin: 0 auto; */
+
+ h5{
+  font-size: 36px !important;
+  line-height: 31px;
+  margin-bottom: 7px;
+ }
+ p:last-child{
+margin-bottom: 0;
+  }
+ 
+}
+
+.special-package-card{
+
+  min-height: 344px;
+  max-height: 100%;
+  height: 100%;
+
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+padding: 52px 45px 22px !important;
+
+h5{
+  font-size: 28px !important;
+  line-height: 101%;
+}
+  }
+
+  .card-footer{
+    border-radius: 0 0 20px 20px;
+    padding: 7px 10px;
+
+    span{
+      font-size: 22px;
+      color: #009268;
+    }
+  }
 }
