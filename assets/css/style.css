@@ -632,6 +632,8 @@ p{
 
   max-width: 100%;
 
+  height: 90px;
+
   z-index: 9;
 
   box-shadow: 2px 4px 22px 0px #0000000A;
@@ -1976,11 +1978,11 @@ height: 76px;
 
 .ayur-why-boxtext h4{
 
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 700;
-  color: 45474B;
   text-align: left;
-  color: #019269;
+  color: #009268;
+  max-width: 90%;
 
 }
 
@@ -5527,11 +5529,9 @@ font-family: 'Philosopher';
 
 font-weight: 700;
 
-font-size: 36px;
-
-word-spacing: 2px;
-
-
+font-size: 55px;
+line-height: 51px;
+/* letter-spacing: -1px; */
 
 }
 
@@ -5573,7 +5573,7 @@ font-weight: 400;
 
 .pl-50 {
 
-  padding-left: 50px;
+  padding-left: 55px;
 
 }
 
@@ -5912,7 +5912,7 @@ margin-left: 2px;
 
             position: relative;
 
-            border: solid #141515c4;
+            border: solid black;
             border-width: 6px;
 
         }
@@ -5923,8 +5923,6 @@ margin-left: 2px;
 .div-img{
   background: linear-gradient(to bottom, #10A881, #0E6251);
   border-radius: 50%;
-  width: 83px;
-  height: 83px;
 }
 .colir-gol-y1 {
   color: #ffd365;
@@ -6405,7 +6403,6 @@ border: 2px solid #ddd;
 
             height: 80px;
 
-            border: 3px solid #28a745;
 
             opacity: 1;
 
@@ -6807,10 +6804,11 @@ h1, h2, h3, h4, h5, h6 {
       display: flex;
 
       align-items: center;
+      /* gap: 20%; */
 
-      justify-content: space-between;
+      /* justify-content: space-between; */
 
-      padding: 2rem;
+      /* padding: 2rem; */
 
       background: linear-gradient(to right, #08b583 50%, #009268 50%);
 
@@ -6860,7 +6858,9 @@ h1, h2, h3, h4, h5, h6 {
 
       align-items: center;
 
-      justify-content: space-between;
+      /* justify-content: space-between; */
+
+      gap: 20%;
 
       width: 100%;
 
@@ -6868,7 +6868,9 @@ h1, h2, h3, h4, h5, h6 {
 
       z-index: 2;
 
-      gap: 1.5rem;
+      gap: 95px;
+
+      /* gap: 1.5rem; */
 
     }
 
@@ -6880,9 +6882,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .logo-section img {
 
-      width: 100px;
+      width: 153px;
 
-      height: 100px;
+      height: 166px;
 
       border-radius: 50%;
 
@@ -6894,9 +6896,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .text-section {
 
-      flex: 2;
+      /* flex: 2; */
 
-      text-align: center;
+      /* text-align: center; */
 
     }
 
@@ -6908,15 +6910,15 @@ h1, h2, h3, h4, h5, h6 {
 
     .text-section h4 {
 
-  font-size: 25px;
+  font-size: 40px;
 
-  margin-top: -77px;
+  /* margin-top: -77px; */
 
-  margin-right: -350%;
+  /* margin-right: -350%; */
 
-  padding-top: -8px;
+  /* padding-top: -8px; */
 
-  padding-bottom: 21px;
+  /* padding-bottom: 21px; */
 
 }
 
@@ -6925,15 +6927,19 @@ h1, h2, h3, h4, h5, h6 {
     .contact-info {
 
       display: flex;
+      flex-direction: column;
 
       justify-content: space-between;
 
-      align-items: center;
+      /* align-items: center; */
 
-      gap: 1.5rem;
+      gap: 4px;
 
     }
 
+    .gap-47{
+      gap: 47px;
+    }
 
 
     .contact-item {
@@ -6944,9 +6950,14 @@ h1, h2, h3, h4, h5, h6 {
 
       gap: 1rem;
 
-      padding: 1rem;
+      /* padding: 1rem; */
 
-      border-radius: 8px;
+      /* border-radius: 8px; */
+
+      &:first-child{
+        padding-right: 48px;
+        border-right: 1px dotted #07684C;
+      }
 
     }
 
@@ -7769,11 +7780,10 @@ p{
     
   font-family: 'Mulish', sans-serif !important;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   color: white;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  line-height: 31px;
+padding: 9px 0 19px 0;
+  line-height: 30px;
 }
 
 
