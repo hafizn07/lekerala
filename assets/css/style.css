@@ -446,7 +446,9 @@ textarea{
 
   border-radius: 22px;
 
-  background-color:#019269;
+  background: rgb(0,146,104);
+  
+  background: linear-gradient(231deg, rgba(0,146,104,1) 0%, rgba(0,44,31,1) 83%);
 
   min-height: 45px;
 
@@ -6765,7 +6767,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-size-32{
 
-    font-size:48px !important;
+    font-size:40px !important;
+    line-height: 30px;
 
 }
 
@@ -7019,7 +7022,7 @@ h1, h2, h3, h4, h5, h6 {
 
       border-radius: 15px;
 
-      margin-left: -63px;
+      margin-left: -93px;
 
     margin-top: 0px;
 
@@ -7195,7 +7198,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-size-32{
 
-    font-size:28px !important;
+    font-size:26px !important;
 
 }
 
@@ -7652,6 +7655,24 @@ h1, h2, h3, h4, h5, h6 {
 color: #FFD700;
 
 padding: 20px 50px;
+
+border-radius: 12px;
+
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+text-align: center;
+
+transition: transform 0.3s ease-in-out;
+
+}
+
+.benefit-card2 {
+
+  background: linear-gradient(40deg, rgba(0,146,104,1) 0%, rgba(0,44,31,1) 83%);
+
+color: #FFD700;
+
+padding: 20px;
 
 border-radius: 12px;
 
