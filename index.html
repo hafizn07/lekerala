@@ -26,11 +26,11 @@ Author: PixelNX
 
 <head>
 
-  <title>Le Kerala</title>
+  <title id="meta_title"></title>
 
   <meta charset="UTF-8">
 
-  <meta name="description" content=" Le Kerala">
+  <meta name="description" content="" id="meta_description">
 
   <meta name="keywords" content="Le Kerala">
 
@@ -236,13 +236,7 @@ Author: PixelNX
             Ultimate Health</h3>
 
 
-          <p>Ayurveda says the health and wellness of an individual is
-
-            the sum of their physical and mental activities. It focuses
-
-            on how an individual's physical and mental perception
-
-            reacts to their body.</p>
+          <p id="description_val"></p>
           <div class="text-end mv-text-left">
             <span
               class=" pt-3 text-end text-uppercase pr-2 philosopher-bold mbv-text-left text-white font-size-15 san-border-cr"
@@ -290,9 +284,10 @@ Author: PixelNX
 
         <div class="form__group field">
 
-          <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+          <input type="input" class="form__field" placeholder="Name" name="name" id='name_val' required />
 
           <label for="name" class="form__label philosopher-regular">Your Name *</label>
+          <span id="name_error"></span>
 
         </div>
 
@@ -302,10 +297,10 @@ Author: PixelNX
 
         <div class="form__group field">
 
-          <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+          <input type="input" class="form__field" placeholder="Name" name="name" id='location_val' required />
 
           <label for="name" class="form__label philosopher-regular">Your location *</label>
-
+            <span id="location_error"></span>
         </div>
 
       </div>
@@ -314,17 +309,17 @@ Author: PixelNX
 
         <div class="form__group field">
 
-          <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+          <input type="input" class="form__field" placeholder="Name" name="name" id='phone_number' required />
 
           <label for="name" class="form__label philosopher-regular">Your phone number * </label>
-
+        <span id="number_error"></span>
         </div>
 
       </div>
 
       <div class="col-md-3 mv-pt-20">
 
-        <a href="" class="ayur-btn philosopher-bold" style="font-size:15px">Book Now</a>
+        <a href="" class="ayur-btn philosopher-bold" style="font-size:15px" id="book_now_btn">Book Now</a>
 
       </div>
 
@@ -372,14 +367,7 @@ Author: PixelNX
 
             </h3>
 
-            <p class="pt-4 mulish-regular font-size-14">Welcome to Le kerala, your premier destination for Ayurvedic
-              healthcare and wellness. We
-
-              are dedicated to providing personalized and holistic healing solutions rooted in the ancient
-
-              wisdom of Ayurveda. Our team of experienced Ayurvedic practitioners and therapists are
-
-              here to guide you on your journey towards optimal health and well-being.</p>
+            <p class="pt-4 mulish-regular font-size-14" id="about_section"></p>
 
 
 
@@ -422,7 +410,7 @@ Author: PixelNX
 
     <div class="container">
 
-      <div class="row">
+      <div class="row" id="fetch_service_list1">
 
         <div class="row">
 
@@ -444,242 +432,242 @@ Author: PixelNX
 
 
 
-        <div class="col-md-3 pt-5 mt-2 mv-pb-50">
+        <!--<div class="col-md-3 pt-5 mt-2 mv-pb-50">-->
 
-          <div class="ayur-why-box">
-            <div class="service-padding1">
-              <div class="ayur-why-boxicon ">
-                <div class="div-img">
-                  <img src="assets/img/Le-Kerala-icons/service1.png" alt="icon" class="p-3 w-100">
-                </div>
-              </div>
-            </div>
+        <!--  <div class="ayur-why-box">-->
+        <!--    <div class="service-padding1">-->
+        <!--      <div class="ayur-why-boxicon ">-->
+        <!--        <div class="div-img">-->
+        <!--          <img src="assets/img/Le-Kerala-icons/service1.png" alt="icon" class="p-3 w-100">-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
 
-            <div class="ayur-why-boxtext">
+        <!--    <div class="ayur-why-boxtext">-->
 
-              <h4 class="service-padding home-serv-head">Sarvanga Abhyangam</h4>
+        <!--      <h4 class="service-padding home-serv-head">Sarvanga Abhyangam</h4>-->
 
-              <p class="pt-2 font-size-14 sevice-con service-padding">Sarvanga Abhyangam is an ancient
+        <!--      <p class="pt-2 font-size-14 sevice-con service-padding">Sarvanga Abhyangam is an ancient-->
 
-                traditional oil massage therapy.</p>
+        <!--        traditional oil massage therapy.</p>-->
 
-              <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                Read More </p>
-            </div>
+        <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+        <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+        <!--        Read More </p>-->
+        <!--    </div>-->
 
-          </div>
+        <!--  </div>-->
 
-        </div>
+        <!--</div>-->
 
-        <div class="col-md-3 pt-5 mt-2 mv-pb-50">
+        <!--<div class="col-md-3 pt-5 mt-2 mv-pb-50">-->
 
-          <div class="ayur-why-box">
-            <div class="service-padding1">
-              <div class="ayur-why-boxicon ">
-                <div class="div-img">
-                  <img src="assets/img/Le-Kerala-icons/service2.png" alt="icon" class="p-3 w-100">
-                </div>
-              </div>
-            </div>
+        <!--  <div class="ayur-why-box">-->
+        <!--    <div class="service-padding1">-->
+        <!--      <div class="ayur-why-boxicon ">-->
+        <!--        <div class="div-img">-->
+        <!--          <img src="assets/img/Le-Kerala-icons/service2.png" alt="icon" class="p-3 w-100">-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
 
-            <div class="ayur-why-boxtext">
+        <!--    <div class="ayur-why-boxtext">-->
 
-              <h4 class="service-padding home-serv-head pt-4">Shirodhara</h4>
+        <!--      <h4 class="service-padding home-serv-head pt-4">Shirodhara</h4>-->
 
-              <p class="pt-2 font-size-14 sevice-con service-padding">an Ayurvedic healing method
+        <!--      <p class="pt-2 font-size-14 sevice-con service-padding">an Ayurvedic healing method-->
 
-                that involves gently pouring liquid
+        <!--        that involves gently pouring liquid-->
 
-                onto your forehead.</p>
+        <!--        onto your forehead.</p>-->
 
-              <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                Read More </p>
-            </div>
+        <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+        <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+        <!--        Read More </p>-->
+        <!--    </div>-->
 
-          </div>
+        <!--  </div>-->
 
-        </div>
+        <!--</div>-->
 
-        <div class="col-md-3 pt-5 mt-2 mv-pb-50">
+        <!--<div class="col-md-3 pt-5 mt-2 mv-pb-50">-->
 
-          <div class="ayur-why-box">
-            <div class="service-padding1">
-              <div class="ayur-why-boxicon ">
-                <div class="div-img">
-                  <img src="assets/img/Le-Kerala-icons/service3.png" alt="icon" class="p-3 w-100">
-                </div>
-              </div>
-            </div>
+        <!--  <div class="ayur-why-box">-->
+        <!--    <div class="service-padding1">-->
+        <!--      <div class="ayur-why-boxicon ">-->
+        <!--        <div class="div-img">-->
+        <!--          <img src="assets/img/Le-Kerala-icons/service3.png" alt="icon" class="p-3 w-100">-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
 
-            <div class="ayur-why-boxtext">
+        <!--    <div class="ayur-why-boxtext">-->
 
-              <h4 class="service-padding home-serv-head pt-4">Signature Facial</h4>
+        <!--      <h4 class="service-padding home-serv-head pt-4">Signature Facial</h4>-->
 
-              <p class="pt-2 font-size-14 sevice-con service-padding">This specially formulated facial
+        <!--      <p class="pt-2 font-size-14 sevice-con service-padding">This specially formulated facial-->
 
-                treatment uses a unique blend of
+        <!--        treatment uses a unique blend of-->
 
-                aromatic essentials</p>
+        <!--        aromatic essentials</p>-->
 
-              <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                Read More </p>
-            </div>
+        <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+        <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+        <!--        Read More </p>-->
+        <!--    </div>-->
 
-          </div>
+        <!--  </div>-->
 
-        </div>
+        <!--</div>-->
 
-        <div class="col-md-3 pt-5 mt-2 mv-pb-50">
+        <!--<div class="col-md-3 pt-5 mt-2 mv-pb-50">-->
 
-          <div class="ayur-why-box">
-            <div class="service-padding1">
-              <div class="ayur-why-boxicon ">
-                <div class="div-img">
-                  <img src="assets/img/Le-Kerala-icons/service4.png" alt="icon" class="p-3 w-100">
-                </div>
-              </div>
-            </div>
+        <!--  <div class="ayur-why-box">-->
+        <!--    <div class="service-padding1">-->
+        <!--      <div class="ayur-why-boxicon ">-->
+        <!--        <div class="div-img">-->
+        <!--          <img src="assets/img/Le-Kerala-icons/service4.png" alt="icon" class="p-3 w-100">-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
 
-            <div class="ayur-why-boxtext">
+        <!--    <div class="ayur-why-boxtext">-->
 
-              <h4 class="service-padding home-serv-head pt-4">Kizhi Therapy</h4>
+        <!--      <h4 class="service-padding home-serv-head pt-4">Kizhi Therapy</h4>-->
 
-              <p class="pt-2 font-size-14 sevice-con service-padding">A linen sachet is filled with a
+        <!--      <p class="pt-2 font-size-14 sevice-con service-padding">A linen sachet is filled with a-->
 
-                mixture of fresh leaves and
+        <!--        mixture of fresh leaves and-->
 
-                powders</p>
+        <!--        powders</p>-->
 
-              <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                Read More </p>
-            </div>
+        <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+        <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+        <!--        Read More </p>-->
+        <!--    </div>-->
 
-          </div>
+        <!--  </div>-->
 
-        </div>
+        <!--</div>-->
 
-        <div class="col-md-3 pt-5 mt-2 mv-pb-50">
+        <!--<div class="col-md-3 pt-5 mt-2 mv-pb-50">-->
 
-          <div class="ayur-why-box">
-            <div class="service-padding1">
-              <div class="ayur-why-boxicon ">
-                <div class="div-img">
-                  <img src="assets/img/Le-Kerala-icons/service5.png" alt="icon" class="p-3 w-100">
-                </div>
-              </div>
-            </div>
+        <!--  <div class="ayur-why-box">-->
+        <!--    <div class="service-padding1">-->
+        <!--      <div class="ayur-why-boxicon ">-->
+        <!--        <div class="div-img">-->
+        <!--          <img src="assets/img/Le-Kerala-icons/service5.png" alt="icon" class="p-3 w-100">-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
 
-            <div class="ayur-why-boxtext">
+        <!--    <div class="ayur-why-boxtext">-->
 
-              <h4 class="service-padding home-serv-head pt-4">Signature Scrub</h4>
+        <!--      <h4 class="service-padding home-serv-head pt-4">Signature Scrub</h4>-->
 
-              <p class="pt-2 font-size-14 sevice-con service-padding">This treatment involves specially
+        <!--      <p class="pt-2 font-size-14 sevice-con service-padding">This treatment involves specially-->
 
-                concocted herbal powder used for
+        <!--        concocted herbal powder used for-->
 
-                deep skin cleaning</p>
+        <!--        deep skin cleaning</p>-->
 
-              <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                Read More </p>
-            </div>
+        <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+        <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+        <!--        Read More </p>-->
+        <!--    </div>-->
 
-          </div>
+        <!--  </div>-->
 
-        </div>
+        <!--</div>-->
 
-        <div class="col-md-3 pt-5 mt-2 mv-pb-50">
+        <!--<div class="col-md-3 pt-5 mt-2 mv-pb-50">-->
 
-          <div class="ayur-why-box">
-            <div class="service-padding1">
-              <div class="ayur-why-boxicon ">
-                <div class="div-img">
-                  <img src="assets/img/Le-Kerala-icons/service6.png" alt="icon" class="p-3 w-100">
-                </div>
-              </div>
-            </div>
+        <!--  <div class="ayur-why-box">-->
+        <!--    <div class="service-padding1">-->
+        <!--      <div class="ayur-why-boxicon ">-->
+        <!--        <div class="div-img">-->
+        <!--          <img src="assets/img/Le-Kerala-icons/service6.png" alt="icon" class="p-3 w-100">-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
 
-            <div class="ayur-why-boxtext">
+        <!--    <div class="ayur-why-boxtext">-->
 
-              <h4 class="service-padding home-serv-head pt-4">Shiro Abhyangam</h4>
+        <!--      <h4 class="service-padding home-serv-head pt-4">Shiro Abhyangam</h4>-->
 
-              <p class="pt-2 font-size-14 sevice-con service-padding">This is an Ayurvedic regimen
+        <!--      <p class="pt-2 font-size-14 sevice-con service-padding">This is an Ayurvedic regimen-->
 
-                that incorporates traditional Indian
+        <!--        that incorporates traditional Indian-->
 
-                head massage techniques</p>
+        <!--        head massage techniques</p>-->
 
-              <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                Read More </p>
-            </div>
+        <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+        <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+        <!--        Read More </p>-->
+        <!--    </div>-->
 
-          </div>
+        <!--  </div>-->
 
-        </div>
+        <!--</div>-->
 
-        <div class="col-md-3 pt-5 mt-2 mv-pb-50">
+        <!--<div class="col-md-3 pt-5 mt-2 mv-pb-50">-->
 
-          <div class="ayur-why-box">
-            <div class="service-padding1">
-              <div class="ayur-why-boxicon ">
-                <div class="div-img">
-                  <img src="assets/img/Le-Kerala-icons/service7.png" alt="icon" class="p-3 w-100">
-                </div>
-              </div>
-            </div>
+        <!--  <div class="ayur-why-box">-->
+        <!--    <div class="service-padding1">-->
+        <!--      <div class="ayur-why-boxicon ">-->
+        <!--        <div class="div-img">-->
+        <!--          <img src="assets/img/Le-Kerala-icons/service7.png" alt="icon" class="p-3 w-100">-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
 
-            <div class="ayur-why-boxtext">
+        <!--    <div class="ayur-why-boxtext">-->
 
-              <h4 class="service-padding home-serv-head pt-4">Pada Abhyangam</h4>
+        <!--      <h4 class="service-padding home-serv-head pt-4">Pada Abhyangam</h4>-->
 
-              <p class="pt-2 font-size-14 sevice-con service-padding">This ancient massage technique
+        <!--      <p class="pt-2 font-size-14 sevice-con service-padding">This ancient massage technique-->
 
-                begins with a purifying Indian foot
+        <!--        begins with a purifying Indian foot-->
 
-                cleansing ritual,</p>
+        <!--        cleansing ritual,</p>-->
 
-              <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                Read More </p>
-            </div>
+        <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+        <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+        <!--        Read More </p>-->
+        <!--    </div>-->
 
-          </div>
+        <!--  </div>-->
 
-        </div>
-        <div class="col-md-3 pt-5 mt-2 mv-pb-50">
+        <!--</div>-->
+        <!--<div class="col-md-3 pt-5 mt-2 mv-pb-50">-->
 
-          <div class="ayur-why-box">
-            <div class="service-padding1">
-              <div class="ayur-why-boxicon ">
-                <div class="div-img">
-                  <img src="assets/img/Le-Kerala-icons/service8.png" alt="icon" class="p-3 w-100">
-                </div>
-              </div>
-            </div>
+        <!--  <div class="ayur-why-box">-->
+        <!--    <div class="service-padding1">-->
+        <!--      <div class="ayur-why-boxicon ">-->
+        <!--        <div class="div-img">-->
+        <!--          <img src="assets/img/Le-Kerala-icons/service8.png" alt="icon" class="p-3 w-100">-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
 
-            <div class="ayur-why-boxtext">
+        <!--    <div class="ayur-why-boxtext">-->
 
-              <h4 class="service-padding home-serv-head pt-4">Nasyam</h4>
+        <!--      <h4 class="service-padding home-serv-head pt-4">Nasyam</h4>-->
 
-              <p class="pt-2 font-size-14 sevice-con service-padding">Nasyam is a potent Panchakarma
+        <!--      <p class="pt-2 font-size-14 sevice-con service-padding">Nasyam is a potent Panchakarma-->
 
-                technique that detoxifies the
+        <!--        technique that detoxifies the-->
 
-                channels and cavities of the neck</p>
+        <!--        channels and cavities of the neck</p>-->
 
-              <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                Read More </p>
-            </div>
+        <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+        <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+        <!--        Read More </p>-->
+        <!--    </div>-->
 
-          </div>
+        <!--  </div>-->
 
-        </div>
+        <!--</div>-->
 
 
 
@@ -731,245 +719,245 @@ Author: PixelNX
 
         <div class="swiper service-slider pt-5">
 
-          <div class="swiper-wrapper pt-5">
+          <div class="swiper-wrapper pt-5" id="fetch_service_list">
 
 
 
-            <div class="swiper-slide">
+            <!--<div class="swiper-slide">-->
 
-              <div class="ayur-why-box">
-                <div class="service-padding">
-                  <div class="ayur-why-boxicon ">
-                    <div class="div-img">
-                      <img src="assets/img/Le-Kerala-icons/service1.png" alt="icon" class="p-3 w-100">
-                    </div>
-                  </div>
-                </div>
+            <!--  <div class="ayur-why-box">-->
+            <!--    <div class="service-padding">-->
+            <!--      <div class="ayur-why-boxicon ">-->
+            <!--        <div class="div-img">-->
+            <!--          <img src="assets/img/Le-Kerala-icons/service1.png" alt="icon" class="p-3 w-100">-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <!--    </div>-->
 
-                <div class="ayur-why-boxtext">
+            <!--    <div class="ayur-why-boxtext">-->
 
-                  <h4 class="service-padding">Sarvanga Abhyangam</h4>
+            <!--      <h4 class="service-padding">Sarvanga Abhyangam</h4>-->
 
-                  <p class="pt-2 font-size-14 sevice-con service-padding">Sarvanga Abhyangam is an ancient
+            <!--      <p class="pt-2 font-size-14 sevice-con service-padding">Sarvanga Abhyangam is an ancient-->
 
-                    traditional oil massage therapy.</p>
+            <!--        traditional oil massage therapy.</p>-->
 
-                  <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                    style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                    Read More </p>
-                </div>
+            <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+            <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+            <!--        Read More </p>-->
+            <!--    </div>-->
 
-              </div>
+            <!--  </div>-->
 
-            </div>
+            <!--</div>-->
 
-            <div class="swiper-slide">
+            <!--<div class="swiper-slide">-->
 
-              <div class="ayur-why-box">
-                <div class="service-padding">
-                  <div class="ayur-why-boxicon ">
-                    <div class="div-img">
-                      <img src="assets/img/Le-Kerala-icons/service2.png" alt="icon" class="p-3 w-100">
-                    </div>
-                  </div>
-                </div>
+            <!--  <div class="ayur-why-box">-->
+            <!--    <div class="service-padding">-->
+            <!--      <div class="ayur-why-boxicon ">-->
+            <!--        <div class="div-img">-->
+            <!--          <img src="assets/img/Le-Kerala-icons/service2.png" alt="icon" class="p-3 w-100">-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <!--    </div>-->
 
-                <div class="ayur-why-boxtext">
+            <!--    <div class="ayur-why-boxtext">-->
 
-                  <h4 class="service-padding">Shirodhara</h4>
+            <!--      <h4 class="service-padding">Shirodhara</h4>-->
 
-                  <p class="pt-2 font-size-14 sevice-con service-padding">an Ayurvedic healing method
+            <!--      <p class="pt-2 font-size-14 sevice-con service-padding">an Ayurvedic healing method-->
 
-                    that involves gently pouring liquid
+            <!--        that involves gently pouring liquid-->
 
-                    onto your forehead.</p>
+            <!--        onto your forehead.</p>-->
 
-                  <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                    style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                    Read More </p>
-                </div>
+            <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+            <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+            <!--        Read More </p>-->
+            <!--    </div>-->
 
-              </div>
+            <!--  </div>-->
 
-            </div>
+            <!--</div>-->
 
-            <div class="swiper-slide">
+            <!--<div class="swiper-slide">-->
 
-              <div class="ayur-why-box">
-                <div class="service-padding">
-                  <div class="ayur-why-boxicon ">
-                    <div class="div-img">
-                      <img src="assets/img/Le-Kerala-icons/service3.png" alt="icon" class="p-3 w-100">
-                    </div>
-                  </div>
-                </div>
+            <!--  <div class="ayur-why-box">-->
+            <!--    <div class="service-padding">-->
+            <!--      <div class="ayur-why-boxicon ">-->
+            <!--        <div class="div-img">-->
+            <!--          <img src="assets/img/Le-Kerala-icons/service3.png" alt="icon" class="p-3 w-100">-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <!--    </div>-->
 
-                <div class="ayur-why-boxtext">
+            <!--    <div class="ayur-why-boxtext">-->
 
-                  <h4 class="service-padding">Signature Facial</h4>
+            <!--      <h4 class="service-padding">Signature Facial</h4>-->
 
-                  <p class="pt-2 font-size-14 sevice-con service-padding">This specially formulated facial
+            <!--      <p class="pt-2 font-size-14 sevice-con service-padding">This specially formulated facial-->
 
-                    treatment uses a unique blend of
+            <!--        treatment uses a unique blend of-->
 
-                    aromatic essentials</p>
+            <!--        aromatic essentials</p>-->
 
-                  <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                    style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                    Read More </p>
-                </div>
+            <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+            <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+            <!--        Read More </p>-->
+            <!--    </div>-->
 
-              </div>
+            <!--  </div>-->
 
-            </div>
+            <!--</div>-->
 
-            <div class="swiper-slide">
+            <!--<div class="swiper-slide">-->
 
-              <div class="ayur-why-box">
-                <div class="service-padding">
-                  <div class="ayur-why-boxicon ">
-                    <div class="div-img">
-                      <img src="assets/img/Le-Kerala-icons/service4.png" alt="icon" class="p-3 w-100">
-                    </div>
-                  </div>
-                </div>
+            <!--  <div class="ayur-why-box">-->
+            <!--    <div class="service-padding">-->
+            <!--      <div class="ayur-why-boxicon ">-->
+            <!--        <div class="div-img">-->
+            <!--          <img src="assets/img/Le-Kerala-icons/service4.png" alt="icon" class="p-3 w-100">-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <!--    </div>-->
 
-                <div class="ayur-why-boxtext">
+            <!--    <div class="ayur-why-boxtext">-->
 
-                  <h4 class="service-padding">Kizhi Therapy</h4>
+            <!--      <h4 class="service-padding">Kizhi Therapy</h4>-->
 
-                  <p class="pt-2 font-size-14 sevice-con service-padding">A linen sachet is filled with a
+            <!--      <p class="pt-2 font-size-14 sevice-con service-padding">A linen sachet is filled with a-->
 
-                    mixture of fresh leaves and
+            <!--        mixture of fresh leaves and-->
 
-                    powders</p>
+            <!--        powders</p>-->
 
-                  <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                    style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                    Read More </p>
-                </div>
+            <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+            <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+            <!--        Read More </p>-->
+            <!--    </div>-->
 
-              </div>
+            <!--  </div>-->
 
-            </div>
+            <!--</div>-->
 
-            <div class="swiper-slide">
+            <!--<div class="swiper-slide">-->
 
-              <div class="ayur-why-box">
-                <div class="service-padding">
-                  <div class="ayur-why-boxicon ">
-                    <div class="div-img">
-                      <img src="assets/img/Le-Kerala-icons/service5.png" alt="icon" class="p-3 w-100">
-                    </div>
-                  </div>
-                </div>
+            <!--  <div class="ayur-why-box">-->
+            <!--    <div class="service-padding">-->
+            <!--      <div class="ayur-why-boxicon ">-->
+            <!--        <div class="div-img">-->
+            <!--          <img src="assets/img/Le-Kerala-icons/service5.png" alt="icon" class="p-3 w-100">-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <!--    </div>-->
 
-                <div class="ayur-why-boxtext">
+            <!--    <div class="ayur-why-boxtext">-->
 
-                  <h4 class="service-padding">Signature Scrub</h4>
+            <!--      <h4 class="service-padding">Signature Scrub</h4>-->
 
-                  <p class="pt-2 font-size-14 sevice-con service-padding">This treatment involves specially
+            <!--      <p class="pt-2 font-size-14 sevice-con service-padding">This treatment involves specially-->
 
-                    concocted herbal powder used for
+            <!--        concocted herbal powder used for-->
 
-                    deep skin cleaning</p>
+            <!--        deep skin cleaning</p>-->
 
-                  <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                    style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                    Read More </p>
-                </div>
+            <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+            <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+            <!--        Read More </p>-->
+            <!--    </div>-->
 
-              </div>
+            <!--  </div>-->
 
 
-            </div>
+            <!--</div>-->
 
-            <div class="swiper-slide">
+            <!--<div class="swiper-slide">-->
 
-              <div class="ayur-why-box">
-                <div class="service-padding">
-                  <div class="ayur-why-boxicon ">
-                    <div class="div-img">
-                      <img src="assets/img/Le-Kerala-icons/service6.png" alt="icon" class="p-3 w-100">
-                    </div>
-                  </div>
-                </div>
+            <!--  <div class="ayur-why-box">-->
+            <!--    <div class="service-padding">-->
+            <!--      <div class="ayur-why-boxicon ">-->
+            <!--        <div class="div-img">-->
+            <!--          <img src="assets/img/Le-Kerala-icons/service6.png" alt="icon" class="p-3 w-100">-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <!--    </div>-->
 
-                <div class="ayur-why-boxtext">
+            <!--    <div class="ayur-why-boxtext">-->
 
-                  <h4 class="service-padding">Shiro Abhyangam</h4>
+            <!--      <h4 class="service-padding">Shiro Abhyangam</h4>-->
 
-                  <p class="pt-2 font-size-14 sevice-con service-padding">This is an Ayurvedic regimen
+            <!--      <p class="pt-2 font-size-14 sevice-con service-padding">This is an Ayurvedic regimen-->
 
-                    that incorporates traditional Indian
+            <!--        that incorporates traditional Indian-->
 
-                    head massage techniques</p>
+            <!--        head massage techniques</p>-->
 
-                  <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                    style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                    Read More </p>
-                </div>
+            <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+            <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+            <!--        Read More </p>-->
+            <!--    </div>-->
 
-              </div>
+            <!--  </div>-->
 
 
-            </div>
+            <!--</div>-->
 
-            <div class="swiper-slide">
-              <div class="ayur-why-box">
-                <div class="service-padding">
-                  <div class="ayur-why-boxicon ">
-                    <div class="div-img">
-                      <img src="assets/img/Le-Kerala-icons/service7.png" alt="icon" class="p-3 w-100">
-                    </div>
-                  </div>
-                </div>
+            <!--<div class="swiper-slide">-->
+            <!--  <div class="ayur-why-box">-->
+            <!--    <div class="service-padding">-->
+            <!--      <div class="ayur-why-boxicon ">-->
+            <!--        <div class="div-img">-->
+            <!--          <img src="assets/img/Le-Kerala-icons/service7.png" alt="icon" class="p-3 w-100">-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <!--    </div>-->
 
-                <div class="ayur-why-boxtext">
+            <!--    <div class="ayur-why-boxtext">-->
 
-                  <h4 class="service-padding">Pada Abhyangam</h4>
+            <!--      <h4 class="service-padding">Pada Abhyangam</h4>-->
 
-                  <p class="pt-2 font-size-14 sevice-con service-padding">This ancient massage technique
+            <!--      <p class="pt-2 font-size-14 sevice-con service-padding">This ancient massage technique-->
 
-                    begins with a purifying Indian foot
+            <!--        begins with a purifying Indian foot-->
 
-                    cleansing ritual,</p>
+            <!--        cleansing ritual,</p>-->
 
-                  <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                    style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                    Read More </p>
-                </div>
+            <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+            <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+            <!--        Read More </p>-->
+            <!--    </div>-->
 
-              </div>
-            </div>
+            <!--  </div>-->
+            <!--</div>-->
 
-            <div class="swiper-slide">
-              <div class="ayur-why-box">
-                <div class="service-padding">
-                  <div class="ayur-why-boxicon ">
-                    <div class="div-img">
-                      <img src="assets/img/Le-Kerala-icons/service8.png" alt="icon" class="p-3 w-100">
-                    </div>
-                  </div>
-                </div>
+            <!--<div class="swiper-slide">-->
+            <!--  <div class="ayur-why-box">-->
+            <!--    <div class="service-padding">-->
+            <!--      <div class="ayur-why-boxicon ">-->
+            <!--        <div class="div-img">-->
+            <!--          <img src="assets/img/Le-Kerala-icons/service8.png" alt="icon" class="p-3 w-100">-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <!--    </div>-->
 
-                <div class="ayur-why-boxtext">
+            <!--    <div class="ayur-why-boxtext">-->
 
-                  <h4 class="service-padding">Nasyam</h4>
+            <!--      <h4 class="service-padding">Nasyam1</h4>-->
 
-                  <p class="pt-2 font-size-14 sevice-con service-padding">Nasyam is a potent Panchakarma
+            <!--      <p class="pt-2 font-size-14 sevice-con service-padding">Nasyam is a potent Panchakarma-->
 
-                    technique that detoxifies the
+            <!--        technique that detoxifies the-->
 
-                    channels and cavities of the neck</p>
+            <!--        channels and cavities of the neck</p>-->
 
-                  <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"
-                    style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
-                    Read More </p>
-                </div>
+            <!--      <p class="service-red text-center text-uppercase pc-color philosopher-bold font-size-13 bg-success text-white p-2"-->
+            <!--        style="margin-bottom: 0px;/*! border: solid; */border: solid #019269;border-radius: 8px;border-top-right-radius: 0px;border-top-left-radius: 0px;">-->
+            <!--        Read More </p>-->
+            <!--    </div>-->
 
-              </div>
-            </div>
+            <!--  </div>-->
+            <!--</div>-->
 
           </div>
 
@@ -1172,7 +1160,7 @@ Author: PixelNX
 
       <div class="btn-view-full">
 
-        <a href="#" class="philosopher-regular font-size-17" style="padding-right: 39px;">View Full Packages &nbsp;</a>
+        <a href="packages.html" class="philosopher-regular font-size-17" style="padding-right: 39px;">View Full Packages &nbsp;</a>
         <img src="assets/svg/Group 137.svg" class="svg" alt="icon" style="width: 39px;
         position: absolute;
         margin-left: -41px;
@@ -1385,125 +1373,125 @@ Author: PixelNX
 
       </div>
 
-      <div class="swiper-wrapper ">
+      <div class="swiper-wrapper testimonial_fetch">
 
 
 
-        <div class="swiper-slide p-3">
+        <!--<div class="swiper-slide p-3">-->
 
-          <div class="testimonial-card p-4">
+        <!--  <div class="testimonial-card p-4">-->
 
-            <p class="testimonial mulish-regular font-size-18 text-center">
+        <!--    <p class="testimonial mulish-regular font-size-18 text-center">-->
 
-              I am with my mother here and really loved the treatment at Lekerala Ayurvedic Clinic and Wellness Center.
-              We took a 2-hour package including a full-body massage, Kizhi therapy, and Shirodhara. It's so relaxing
-              and mind-refreshing.
+        <!--      I am with my mother here and really loved the treatment at Lekerala Ayurvedic Clinic and Wellness Center.-->
+        <!--      We took a 2-hour package including a full-body massage, Kizhi therapy, and Shirodhara. It's so relaxing-->
+        <!--      and mind-refreshing.-->
 
-            </p>
+        <!--    </p>-->
 
-            <div class="client-info">
+        <!--    <div class="client-info">-->
 
-              <h3 class="philosopher-regular font-size-18">Sai Krishna</h3>
+        <!--      <h3 class="philosopher-regular font-size-18">Sai Krishna</h3>-->
 
-              <p class="text-center mulish-regular">Actor &amp; Influencer</p>
+        <!--      <p class="text-center mulish-regular">Actor &amp; Influencer</p>-->
 
-              <div class="stars">★★★★☆</div>
+        <!--      <div class="stars">★★★★☆</div>-->
 
-            </div>
-
-
-
-          </div>
-
-        </div>
+        <!--    </div>-->
 
 
 
-        <div class="swiper-slide p-3 ">
+        <!--  </div>-->
 
-          <div class="testimonial-card p-4">
-
-            <p class="testimonial mulish-regular font-size-18 justify-content-around">
-
-              I am with my mother here and really loved the treatment at Lekerala Ayurvedic Clinic and Wellness Center.
-              We took a 2-hour package including a full-body massage, Kizhi therapy, and Shirodhara. It's so relaxing
-              and mind-refreshing.
-
-            </p>
-
-            <div class="client-info">
-
-              <h3 class="philosopher-regular font-size-18">Sai Krishna</h3>
-
-              <p class="text-center mulish-regular">Actor &amp; Influencer</p>
-
-              <div class="stars">★★★★☆</div>
-
-            </div>
+        <!--</div>-->
 
 
 
-          </div>
+        <!--<div class="swiper-slide p-3 ">-->
 
-        </div>
+        <!--  <div class="testimonial-card p-4">-->
 
+        <!--    <p class="testimonial mulish-regular font-size-18 justify-content-around">-->
 
+        <!--      I am with my mother here and really loved the treatment at Lekerala Ayurvedic Clinic and Wellness Center.-->
+        <!--      We took a 2-hour package including a full-body massage, Kizhi therapy, and Shirodhara. It's so relaxing-->
+        <!--      and mind-refreshing.-->
 
-        <div class="swiper-slide p-3">
+        <!--    </p>-->
 
-          <div class="testimonial-card p-4">
+        <!--    <div class="client-info">-->
 
-            <p class="testimonial mulish-regular font-size-18 text-center justify-content-around">
+        <!--      <h3 class="philosopher-regular font-size-18">Sai Krishna</h3>-->
 
-              I am with my mother here and really loved the treatment at Lekerala Ayurvedic Clinic and Wellness Center.
-              We took a 2-hour package including a full-body massage, Kizhi therapy, and Shirodhara. It's so relaxing
-              and mind-refreshing.
+        <!--      <p class="text-center mulish-regular">Actor &amp; Influencer</p>-->
 
-            </p>
+        <!--      <div class="stars">★★★★☆</div>-->
 
-            <div class="client-info">
-
-              <h3 class="philosopher-regular font-size-18">Sai Krishna</h3>
-
-              <p class="text-center mulish-regular">Actor &amp; Influencer</p>
-
-              <div class="stars">★★★★☆</div>
-
-            </div>
+        <!--    </div>-->
 
 
 
-          </div>
+        <!--  </div>-->
 
-        </div>
-
-        <div class="swiper-slide p-3">
-
-          <div class="testimonial-card p-4">
-
-            <p class="testimonial mulish-regular font-size-18 text-center justify-content-around">
-
-              I am with my mother here and really loved the treatment at Lekerala Ayurvedic Clinic and Wellness Center.
-              We took a 2-hour package including a full-body massage, Kizhi therapy, and Shirodhara. It's so relaxing
-              and mind-refreshing.
-
-            </p>
-
-            <div class="client-info">
-
-              <h3 class="philosopher-regular font-size-18">Sai Krishna</h3>
-
-              <p class="text-center mulish-regular">Actor &amp; Influencer</p>
-
-              <div class="stars">★★★★☆</div>
-
-            </div>
+        <!--</div>-->
 
 
 
-          </div>
+        <!--<div class="swiper-slide p-3">-->
 
-        </div>
+        <!--  <div class="testimonial-card p-4">-->
+
+        <!--    <p class="testimonial mulish-regular font-size-18 text-center justify-content-around">-->
+
+        <!--      I am with my mother here and really loved the treatment at Lekerala Ayurvedic Clinic and Wellness Center.-->
+        <!--      We took a 2-hour package including a full-body massage, Kizhi therapy, and Shirodhara. It's so relaxing-->
+        <!--      and mind-refreshing.-->
+
+        <!--    </p>-->
+
+        <!--    <div class="client-info">-->
+
+        <!--      <h3 class="philosopher-regular font-size-18">Sai Krishna</h3>-->
+
+        <!--      <p class="text-center mulish-regular">Actor &amp; Influencer</p>-->
+
+        <!--      <div class="stars">★★★★☆</div>-->
+
+        <!--    </div>-->
+
+
+
+        <!--  </div>-->
+
+        <!--</div>-->
+
+        <!--<div class="swiper-slide p-3">-->
+
+        <!--  <div class="testimonial-card p-4">-->
+
+        <!--    <p class="testimonial mulish-regular font-size-18 text-center justify-content-around">-->
+
+        <!--      I am with my mother here and really loved the treatment at Lekerala Ayurvedic Clinic and Wellness Center.-->
+        <!--      We took a 2-hour package including a full-body massage, Kizhi therapy, and Shirodhara. It's so relaxing-->
+        <!--      and mind-refreshing.-->
+
+        <!--    </p>-->
+
+        <!--    <div class="client-info">-->
+
+        <!--      <h3 class="philosopher-regular font-size-18">Sai Krishna</h3>-->
+
+        <!--      <p class="text-center mulish-regular">Actor &amp; Influencer</p>-->
+
+        <!--      <div class="stars">★★★★☆</div>-->
+
+        <!--    </div>-->
+
+
+
+        <!--  </div>-->
+
+        <!--</div>-->
 
       </div>
 
@@ -1895,7 +1883,7 @@ Author: PixelNX
                 </div>
                 <div class="contact-text">
                   <span class="fira-regular font-size-16">Mail Us</span>
-                  <span class="fira-semibold ">lekeralaayurveda@gmail.com</span>
+                  <span class="fira-semibold emailidfetch"></span>
                 </div>
               </div>
             </div>
@@ -1940,7 +1928,7 @@ Author: PixelNX
               </div>
               <div class="contact-text">
                 <span class="fira-regular font-size-16 mv-text-left">Mail Us</span>
-                <span class="fira-semibold mv-text-left">lekeralaayurveda@gmail.com</span>
+                <span class="fira-semibold mv-text-left emailidfetch"></span>
               </div>
             </div>
           </div>
@@ -2028,7 +2016,7 @@ Author: PixelNX
 
             <p class="mb-1 pt-3 philosopher-regular font-size-14">Mail Us</p>
 
-            <p class="fira-regular font-size-16">lekeralaayurveda@gmail.com</p>
+            <p class="fira-regular font-size-16 emailidfetch"></p>
 
             <div class="d-flex gap-3 pt-2">
 
@@ -2074,71 +2062,71 @@ Author: PixelNX
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      let thumbnailData = [
-        { src: "assets/images/team-1.png", alt: "Client 1" },
-        { src: "assets/images/team-2.png", alt: "Client 2" },
-        { src: "assets/images/team-3.png", alt: "Client 3" },
-        { src: "assets/images/team-5.png", alt: "Client 4" },
-      ];
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   let thumbnailData = [
+    //     { src: "assets/images/team-1.png", alt: "Client 1" },
+    //     { src: "assets/images/team-2.png", alt: "Client 2" },
+    //     { src: "assets/images/team-3.png", alt: "Client 3" },
+    //     { src: "assets/images/team-5.png", alt: "Client 4" },
+    //   ];
 
-      let swiper = new Swiper(".ayur-testimonial-slider", {
-        loop: true,
-        autoplay: {
-          delay: 8000,
-          disableOnInteraction: false,
-        },
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        on: {
-          slideChange: function () {
-            let activeIndex = swiper.realIndex;
-            updateActiveThumbnail(activeIndex);
-          }
-        }
-      });
+    //   let swiper = new Swiper(".ayur-testimonial-slider", {
+    //     loop: true,
+    //     autoplay: {
+    //       delay: 8000,
+    //       disableOnInteraction: false,
+    //     },
+    //     slidesPerView: 1,
+    //     spaceBetween: 10,
+    //     navigation: {
+    //       nextEl: ".swiper-button-next",
+    //       prevEl: ".swiper-button-prev"
+    //     },
+    //     on: {
+    //       slideChange: function () {
+    //         let activeIndex = swiper.realIndex;
+    //         updateActiveThumbnail(activeIndex);
+    //       }
+    //     }
+    //   });
 
-      function updateActiveThumbnail(index) {
-        let totalThumbs = thumbnailData.length;
-        let thumbContainer = document.getElementById("thumb123");
+    //   function updateActiveThumbnail(index) {
+    //     let totalThumbs = thumbnailData.length;
+    //     let thumbContainer = document.getElementById("thumb123");
 
-        let leftIndex = (index - 1 + totalThumbs) % totalThumbs;
-        let rightIndex = (index + 1) % totalThumbs;
+    //     let leftIndex = (index - 1 + totalThumbs) % totalThumbs;
+    //     let rightIndex = (index + 1) % totalThumbs;
 
-        let visibleThumbs = [leftIndex, index, rightIndex];
+    //     let visibleThumbs = [leftIndex, index, rightIndex];
 
-        // Clear old thumbnails
-        thumbContainer.innerHTML = "";
+    //     // Clear old thumbnails
+    //     thumbContainer.innerHTML = "";
 
-        // Append new thumbnails
-        visibleThumbs.forEach(i => {
-          let newImg = document.createElement("img");
-          newImg.src = thumbnailData[i].src;
-          newImg.alt = thumbnailData[i].alt;
-          newImg.classList.add("client-thumb");
+    //     // Append new thumbnails
+    //     visibleThumbs.forEach(i => {
+    //       let newImg = document.createElement("img");
+    //       newImg.src = thumbnailData[i].src;
+    //       newImg.alt = thumbnailData[i].alt;
+    //       newImg.classList.add("client-thumb");
 
-          // Highlight active thumbnail
-          if (i === index) {
-            newImg.classList.add("active");
-          }
+    //       // Highlight active thumbnail
+    //       if (i === index) {
+    //         newImg.classList.add("active");
+    //       }
 
-          // Click event for thumbnails
-          newImg.addEventListener("click", function () {
-            swiper.slideToLoop(i);
-            updateActiveThumbnail(i);
-          });
+    //       // Click event for thumbnails
+    //       newImg.addEventListener("click", function () {
+    //         swiper.slideToLoop(i);
+    //         updateActiveThumbnail(i);
+    //       });
 
-          thumbContainer.appendChild(newImg);
-        });
-      }
+    //       thumbContainer.appendChild(newImg);
+    //     });
+    //   }
 
-      // Initialize thumbnails
-      updateActiveThumbnail(0);
-    });
+    //   // Initialize thumbnails
+    //   updateActiveThumbnail(0);
+    // });
   </script>
 
 
@@ -2196,6 +2184,7 @@ Author: PixelNX
 
   </script>
 
+<script src="js/home.js"></script>
 </body>
 
 

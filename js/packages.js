@@ -1,0 +1,21 @@
+fetch('https://wefixz.com/le_kerala_api/packages_api.php')
+.then(Response=>Response.json())
+.then(data=>{
+    console.log(data)
+    $('#meta_title').append(`${data[0]['meta_title']}`)
+    $('#meta_description').attr('content',`${data[0]['meta_description']}`)
+    $('#wellness_val').append(`${data[0]['wellness']}`)
+    $('#exclusive_package1').append(`${data[0]['exclusive_package1']}`)
+    $('#exclusive_package2').append(`${data[0]['exclusive_package2']}`)
+    $('#exclusive_package3').append(`${data[0]['exclusive_package3']}`)
+    $('#exclusive_package4').append(`${data[0]['exclusive_package4']}`)
+    $('#exclusive_package5').append(`${data[0]['exclusive_package5']}`)
+    
+    $('#special_package1').append(`${data[0]['special_package1']}`)
+    $('#special_package2').append(`${data[0]['special_package2']}`)
+    $('#special_package3').append(`${data[0]['special_package3']}`)
+    
+     $('#other_package1').append(`${data[0]['other_package1']}`)
+     $('#other_package2').append(`${data[0]['other_package2']}`)
+     $('#other_package3').append(`${data[0]['other_package3']}`)
+})

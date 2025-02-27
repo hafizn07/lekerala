@@ -35,40 +35,62 @@ Project: Pure Ayurveda HTML
         });
       },
       // nav menu toggle
+      // ayur_nav_menu: function () {
+      //   $(document).on("click", function (event) {
+      //     var $trigger = $(".ayur-toggle-btn");
+      //     if ($trigger !== event.target && !$trigger.has(event.target).length) {
+      //       $("body").removeClass("ayur-menu-open");
+      //     }
+      //   });
+      //   $(".ayur-toggle-btn").click(function () {
+      //     $("body").toggleClass("ayur-menu-open");
+      //   });
+  
+      //   //submenu
+      //   $('.ayur-has-menu > a').click(function (event) {
+      //     event.stopPropagation();
+      //     var $submenu = $(this).next('.ayur-submenu');
+      //     $('.ayur-submenu').not($submenu).removeClass('ayur-submenu-open');
+      //     $submenu.toggleClass('ayur-submenu-open');
+      //   });
+      //   $('.ayur-submenu a').click(function (event) {
+      //     event.stopPropagation();
+      //   });
+      //   $(document).on("click", function (event) {
+      //     if (!$(event.target).closest('.ayur-has-menu').length) {
+      //       $('.ayur-submenu').removeClass('ayur-submenu-open')
+      //     }
+      //   })
+      // },
+      // // fix menu scroll
+      // tr_fix_menu_scroll: function () {
+      //   $(window).on('scroll', function () {
+      //     if ($(window).scrollTop() > 300) {
+      //       $(".tr_menu_wrapper1").addClass("tr-fixed");
+      //     } else {
+      //       $(".tr_menu_wrapper1").removeClass("tr-fixed");
+      //     }
+      //   });
+      // },
       ayur_nav_menu: function () {
-        $(document).on("click", function (event) {
-          var $trigger = $(".ayur-toggle-btn");
-          if ($trigger !== event.target && !$trigger.has(event.target).length) {
-            $("body").removeClass("ayur-menu-open");
-          }
-        });
+        // Toggle mobile menu
         $(".ayur-toggle-btn").click(function () {
           $("body").toggleClass("ayur-menu-open");
         });
-  
-        //submenu
-        $('.ayur-has-menu > a').click(function (event) {
-          event.stopPropagation();
-          var $submenu = $(this).next('.ayur-submenu');
-          $('.ayur-submenu').not($submenu).removeClass('ayur-submenu-open');
-          $submenu.toggleClass('ayur-submenu-open');
-        });
-        $('.ayur-submenu a').click(function (event) {
-          event.stopPropagation();
-        });
+      
+        // Close mobile menu when clicking outside the .ayur-nav-menu
         $(document).on("click", function (event) {
-          if (!$(event.target).closest('.ayur-has-menu').length) {
-            $('.ayur-submenu').removeClass('ayur-submenu-open')
-          }
-        })
-      },
-      // fix menu scroll
-      tr_fix_menu_scroll: function () {
-        $(window).on('scroll', function () {
-          if ($(window).scrollTop() > 300) {
-            $(".tr_menu_wrapper1").addClass("tr-fixed");
-          } else {
-            $(".tr_menu_wrapper1").removeClass("tr-fixed");
+          var $navMenu = $(".ayur-nav-menu");
+          var $toggleBtn = $(".ayur-toggle-btn");
+      
+          // Check if the click is outside the .ayur-nav-menu and not on the toggle button
+          if (
+            !$navMenu.is(event.target) && // Click is not on the nav menu
+            $navMenu.has(event.target).length === 0 && // Click is not inside the nav menu
+            !$toggleBtn.is(event.target) && // Click is not on the toggle button
+            $toggleBtn.has(event.target).length === 0 // Click is not inside the toggle button
+          ) {
+            $("body").removeClass("ayur-menu-open"); // Close the mobile menu
           }
         });
       },
