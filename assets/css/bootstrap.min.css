@@ -13992,6 +13992,15 @@ fieldset:disabled .btn {
     /* color: #fff; */
     position: relative;
 }
+.facility-all-section{
+    background-image: url('../img/bg/bgf.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    /*padding: 62px 0px;*/
+    text-align: center;
+    /* color: #fff; */
+    position: relative;
+}
 .bg12{
     background-image: url('../img/bg/pack-bg.png'); /* Replace with your image path */
     background-size: cover;
